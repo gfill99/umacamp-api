@@ -2,6 +2,7 @@ package br.com.umacamp.api.controller;
 
 import br.com.umacamp.api.member.Member;
 import br.com.umacamp.api.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @RequestMapping("/members")
 public class MemberController {
 
+    @Autowired
     private final MemberRepository repository;
 
     public MemberController(MemberRepository repository) {

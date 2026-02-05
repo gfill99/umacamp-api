@@ -80,4 +80,7 @@ public class Member {
 
     @Column(columnDefinition = "TEXT", name = "hear_you")
     private String hearYou;
+
+//    public Long getId() { return id; }
+//    public String getName() { return name; }
 }
